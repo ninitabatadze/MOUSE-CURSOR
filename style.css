@@ -1,0 +1,20 @@
+body{
+
+}
+#object-to-follow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color:deeppink;
+    border-radius: 50%; 
+    pointer-events: none;
+}
+.chalange{
+display: flex;
+justify-content: center;
+color: blue;
+align-items: center;
+font-size: 36px;
+text-align: center;
+padding-top: 200px;
+}

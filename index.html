@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+      <p class="chalange">OBJECT FOLLOING THE MOUSE CURSOR</p>  
+   
+    <div id="object-to-follow"></div>  
+</div>
+</body>
+<script type="text/javascript">
+const objectToFollow = document.getElementById('object-to-follow');
+        const offset = 50; 
+        document.addEventListener('mousemove', (event) => {
+            const mouseX = event.clientX;
+            const mouseY = event.clientY;
+          const objectX = mouseX - offset;
+            const objectY = mouseY - offset;
+            objectToFollow.style.left = objectX + 'px';
+            objectToFollow.style.top = objectY + 'px';
+        });
+</script>
+</html>
